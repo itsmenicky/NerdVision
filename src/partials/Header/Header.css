@@ -1,0 +1,34 @@
+.header{
+  background-color: black;
+}
+
+.navbar{
+  width: 100%;
+}
+
+#theylive{
+  text-shadow: 2px 2px 2px red;
+}
+
+#btnCart{
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.805);
+  position:relative;
+  font-size: 20px;
+}
+
+#btnCart .cart-status{
+  background-color: blue;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
