@@ -1,1 +1,1 @@
-<h1 text-align=center>NerdVision</h1>
+<h1 align=center>NerdVision</h1>
