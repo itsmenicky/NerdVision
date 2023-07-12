@@ -1,0 +1,40 @@
+.two-cols{
+  background: black;
+  color: white;
+}
+
+.two-cols-content{
+  width: 50%;
+  float: left;
+  text-align: justify;
+  padding: 20px;
+  padding-top: 200px;
+}
+
+.OurStory-title{
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 50px;
+}
+
+.banner-two-cols{
+  width: 50%;
+  float: right;
+}
+
+@media only screen and (max-width: 1090px) {
+  
+  .two-cols{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .two-cols-content{
+    width: 100%;
+    padding-top: 50px;
+  }
+
+  .banner-two-cols{
+    width: 100%;
+  }
+}
