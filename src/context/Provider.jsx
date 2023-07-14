@@ -8,6 +8,7 @@ export const Provider = ({children}) => {
   const [cartItems, setCartItems] = useState([]);
   const [products, setProducts] = useState([]);
   const [cartVisible, setCartVisible] = useState(false);
+  const [itemQuantity, setItemQuantity] = useState(1);
 
   const value = {
     products, 
@@ -15,7 +16,9 @@ export const Provider = ({children}) => {
     cartItems,
     setCartItems,
     cartVisible,
-    setCartVisible
+    setCartVisible,
+    itemQuantity,
+    setItemQuantity
   };
 
   return(

@@ -4,6 +4,13 @@
 
 .navbar{
   width: 100%;
+  position: fixed;
+  z-index: 3;
+  background-color: black;
+}
+
+#nav-links{
+  align-items: left;
 }
 
 #theylive{
@@ -31,4 +38,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media only screen and (min-width: 780px) {
+
+  #nav-links{
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 547px){
+  .carouselTitles{
+     font-size: 15px;
+  }
 }

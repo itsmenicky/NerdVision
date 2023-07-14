@@ -24,7 +24,7 @@ export const Header = () => {
           <Navbar.Brand href="#home"><BsSunglasses />  NerdVision</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
+            <Nav id="nav-links" className="me-auto">
               <Nav.Link href="#home">Quem Somos</Nav.Link>
               <Nav.Link href="#link">Nosso Time</Nav.Link>
               <Nav.Link href="#link">Nossos Produtos</Nav.Link>
@@ -39,7 +39,7 @@ export const Header = () => {
         </Container>
       </Navbar>
 
-      <Carousel>
+      <Carousel pause={false} interval={2000}>
         <Carousel.Item>
           <img
             className="d-block w-100"
@@ -47,7 +47,7 @@ export const Header = () => {
             alt="They Live Sunglasses"
           />
           <Carousel.Caption>
-            <h3 id="theylive">Veja oque eles não querem que você veja com esses lindos óculos escuros</h3>
+            <h3 id="theylive" className="carouselTitles">Veja oque eles não querem que você veja com esses lindos óculos escuros</h3>
           </Carousel.Caption>
         </Carousel.Item>
 
@@ -59,7 +59,7 @@ export const Header = () => {
           />
 
           <Carousel.Caption>
-            <h3>Se torne um verdadeiro(a) bruxo(a) com a incrível coleção Harry Potter!</h3>
+            <h3 className="carouselTitles">Se torne um verdadeiro(a) bruxo(a) com a incrível coleção Harry Potter!</h3>
           </Carousel.Caption>
         </Carousel.Item>
 
@@ -71,7 +71,7 @@ export const Header = () => {
           />
 
           <Carousel.Caption>
-            <h3>Conheça nossa coleção dos Beatles</h3>
+            <h3 className="carouselTitles">Conheça nossa coleção dos Beatles</h3>
           </Carousel.Caption>
         </Carousel.Item>
 
@@ -83,7 +83,7 @@ export const Header = () => {
           />
 
           <Carousel.Caption>
-            <h3>Descubra um mundo de visão épica com a Marvel Collection</h3>
+            <h3 className="carouselTitles">Descubra um mundo de visão épica com a Marvel Collection</h3>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
