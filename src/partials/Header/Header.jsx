@@ -39,7 +39,7 @@ export const Header = () => {
         </Container>
       </Navbar>
 
-      <Carousel pause={false} interval={2000}>
+      <Carousel className="carousel" pause={false} interval={2000}>
         <Carousel.Item>
           <img
             className="d-block w-100"

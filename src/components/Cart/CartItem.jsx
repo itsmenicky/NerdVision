@@ -11,6 +11,7 @@ export const CartItem = ({ data }) => {
 
   const handleRemoveItem = () => {
     const updatedItems = cartItems.filter((item) => item.id !== data.id);
+    data.quantity = 1;
     setCartItems(updatedItems);
   };
 
@@ -23,9 +24,15 @@ export const CartItem = ({ data }) => {
 
   const handleChange = (event) => {
     const { value } = event.target;
-    if (value > 0){
+    if (value >= 0){
       setItemQuantity(Number(value));
       updateCartItems(value);
+    }
+  };
+
+  const handleBlur = () => {
+    if (itemQuantity !== '') {
+      setItemQuantity(Number(itemQuantity));
     }
   };
 
@@ -36,7 +43,7 @@ export const CartItem = ({ data }) => {
       <div className="item-content">
         <h3 className="cart-item-title">{data.title}</h3>
         <h3 className="cart-item-price">{formatCurrency(data.price, 'BRL')}</h3>
-        <input className="cart-item-qt" onChange={handleChange} type="number" value={itemQuantity} />
+        <input className="cart-item-qt" onChange={handleChange} onBlur={handleBlur} type="text" value={itemQuantity} />
 
         <button type="button" className="btn-remove-item" onClick={handleRemoveItem}>
           <CiCircleRemove />

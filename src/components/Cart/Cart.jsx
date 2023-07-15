@@ -12,8 +12,6 @@ export const Cart = () => {
     const totalPrice = cartItems.reduce((total, item) => {
       return total + item.price * item.quantity;
     }, 0);
-    // Atualiza o total da compra
-    // Pode ser armazenado em um estado separado ou utilizado diretamente
     return totalPrice;
   };
 

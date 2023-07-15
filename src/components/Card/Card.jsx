@@ -12,7 +12,15 @@ export const CardBS = ({data}) => {
   const {cartItems, setCartItems} = useContext(AppContext);
 
   const handleAddCart = () =>{
-    setCartItems([...cartItems, data]);
+    // Verifica se o item já existe no carrinho pelo data.id
+    const itemExists = cartItems.some((item) => item.id === data.id);
+
+    if (!itemExists) {
+      setCartItems([...cartItems, data]);
+    } else {
+    // Item já existe no carrinho, exiba uma mensagem de erro ou realize outra ação desejada
+      alert('Produto já incluso no carrinho! ;)');
+    }
   };
 
   return(

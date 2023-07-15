@@ -17,7 +17,7 @@ export const Footer = () => {
       </ul>
 
       <ul className="social-media-logos">
-        <li><a><img className="social-media" src={Facebook}/></a></li>
+        <li><a href="https://pt-br.facebook.com"><img className="social-media" src={Facebook}/></a></li>
         <li><a href="https://www.instagram.com/applenick.exe/"><img className="social-media" src={Instagram}/></a></li>
         <li><a href="https://www.linkedin.com/in/nickolas-martins-6b0424255/"><img className="social-media" src={Linkedin}/></a></li>
       </ul>

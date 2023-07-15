@@ -9,6 +9,10 @@
   background-color: black;
 }
 
+.carousel{
+  padding-top: 15px;
+}
+
 #nav-links{
   align-items: left;
 }
