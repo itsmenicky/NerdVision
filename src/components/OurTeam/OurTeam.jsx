@@ -6,7 +6,7 @@ import GabrielSales from './GabrielSales.jpg';
 
 export const OurTeam = () => {
   return(
-    <section className="OurTeam">
+    <section id="nosso-time" className="OurTeam">
       <h1 className="OurTeam-title">Nosso time</h1>
 
       <div className="profile">

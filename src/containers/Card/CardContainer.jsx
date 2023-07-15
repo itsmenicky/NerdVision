@@ -14,7 +14,7 @@ export const CardContainer = () => {
   }, []);
 
   return(
-    <div className="linha">
+    <div id="nossos-produtos" className="linha">
       {
         products.map((product) => <CardBS key={product.id} data={product}/>)
       }

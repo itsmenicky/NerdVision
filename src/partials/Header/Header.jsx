@@ -18,16 +18,16 @@ export const Header = () => {
   const {cartItems, setCartVisible, cartVisible} = useContext(AppContext);
 
   return(
-    <header className="header">
+    <header id="home" className="header">
       <Navbar expand="lg" data-bs-theme="dark" className="navbar">
         <Container>
           <Navbar.Brand href="#home"><BsSunglasses />  NerdVision</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav id="nav-links" className="me-auto">
-              <Nav.Link href="#home">Quem Somos</Nav.Link>
-              <Nav.Link href="#link">Nosso Time</Nav.Link>
-              <Nav.Link href="#link">Nossos Produtos</Nav.Link>
+              <Nav.Link href="#quem-somos">Quem Somos</Nav.Link>
+              <Nav.Link href="#nosso-time">Nosso Time</Nav.Link>
+              <Nav.Link href="#nossos-produtos">Nossos produtos</Nav.Link>
               <Nav.Link>
                 <button type="button" id="btnCart" onClick={() => setCartVisible(!cartVisible)}>
                   <AiOutlineShoppingCart />

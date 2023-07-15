@@ -2,9 +2,9 @@ import React from 'react';
 import './OurStory.css';
 import GlassesST from './GlassesST.jpg';
 
-export const OurHistory = () => {
+export const OurStory = () => {
   return(
-    <section className="linha">
+    <section id="quem-somos" className="linha">
       <div className="two-cols">
         <div className="two-cols-content">
           <h2 className="OurStory-title">Nossa História</h2>
